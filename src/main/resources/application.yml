@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: auth-service-key
+
+cloud:
+  eureka-host: localhost
+
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: http://${cloud.eureka-host}:8761/eureka
+server:
+  port: 9000
